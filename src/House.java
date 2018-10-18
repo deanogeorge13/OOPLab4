@@ -52,7 +52,11 @@ public class House {
 
     public void setPrice(double price)
     {
-        this.price = price;
+        if(price>=0.0)
+            this.price = price;
+
+        else
+            System.out.println("yikes");
     }
 
     public void setOwner(Person owner)
