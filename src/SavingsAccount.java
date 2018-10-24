@@ -31,4 +31,10 @@ public class SavingsAccount extends BankAccount{
     {
         setBalance(getBalance()-a);
     }
+
+    @Override
+    public String toString()
+    {
+        return super.toString() + "\nBalance: " + getBalance();
+    }
 }

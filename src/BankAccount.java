@@ -30,4 +30,10 @@ public abstract class BankAccount implements Transactable, Taxable{
     {
         return accNum;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Name: " + getName() + "\nAccount Num: " + getAccNum();
+    }
 }
